@@ -2,9 +2,9 @@
   <head>
     <meta charset="utf-8">
     <title>Kumon Database Search</title>
-    <link rel="stylesheet" href="set.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="search.js"></script>
-    <style src="styles.css"></style>
+    <link rel="stylesheet" href="styles.css">
   </head>
 
   <body>
@@ -12,14 +12,15 @@
       <h1>Seach!</h1>
     </header>
     <main>
-      <div class="wrap">
-        <div class="search">
-          <input type="text" class="searchTerm" placeholder="What are you looking for?">
-          <button type="submit" class="searchButton">
-            <i class="fa fa-search"></i>
-          </button>
+      <form autocomplete="off" action="/action_page.php">
+        <div class="autocomplete" style="width:300px;">
+          <input id="myInput" type="text" name="studentName" placeholder="Student Name">
         </div>
-      </div>
+        <input type="submit">
+      </form>
+      <table>
+        <!-- table! -->
+      </table>
     </main>
   </body>
 </html>
